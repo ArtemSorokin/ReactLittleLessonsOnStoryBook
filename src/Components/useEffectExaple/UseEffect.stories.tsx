@@ -20,9 +20,12 @@ export const Exaple1 = () => {
 
     useEffect(()=>{
         console.log('useEffect work every time')
+        document.title = counter.toString()
     })
     useEffect(()=>{
         console.log('useEffect work one time')
+
+
     }, [])
     useEffect(()=>{
         console.log('useEffect work when counter need to change')
