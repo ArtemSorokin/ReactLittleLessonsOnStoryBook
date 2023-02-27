@@ -1,0 +1,122 @@
+*{
+   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100% ;
+    background-color: whitesmoke;
+}
+
+.clock{
+
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("clockCartoon.png") center / cover ;
+    border: 10px solid black;
+    border-radius: 50%;
+    box-shadow: 10px 5px 5px lightslategrey;
+    position: relative;
+
+
+}
+ .clock:before {
+     content: '';
+     position: absolute;
+     width: 15px;
+     height: 15px;
+     background-color: deepskyblue;
+     border-radius: 50%;
+     z-index: 999;
+}
+
+ .clock .hour,
+ .clock .minutes,
+ .clock .second {
+     position: absolute;
+ }
+
+ .clock .hour, .hours{
+     width: 160px;
+     height: 160px;
+ }
+.clock .minute, .minutes{
+    width: 190px;
+    height: 190px;
+}
+
+.clock .second, .seconds{
+    width: 230px;
+    height: 230px;
+}
+
+.hours, .minutes, .seconds{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    border-radius: 50px;
+}
+
+
+.hours:before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 80px;
+    background-color: #ffc600;
+    z-index: 10;
+    border-radius: 6px 6px 0 0;
+}
+
+.minutes:before{
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 90px;
+    background-color: red;
+    z-index: 11;
+    border-radius: 6px 6px 0 0;
+}
+.seconds:before{
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background-color: #66bf3c;
+    z-index: 12;
+    border-radius: 6px 6px 0 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

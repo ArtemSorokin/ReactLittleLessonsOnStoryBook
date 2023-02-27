@@ -50,7 +50,7 @@ export const UseEffectTime = () => {
 
         setInterval( ()=>{
             setTime(st=> st+1 )
-        }, 300)
+        }, 1000)
 
 
     },[])
